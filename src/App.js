@@ -32,8 +32,8 @@ export default function App() {
     <ThemeContext.Provider value={themes.dark}>
       <LanguageContext.Provider value={languages.spanish}>
         <div className="App">
+        <CreateMovie createMovieFn={createMovieFn} />
           <MoviesList additionalMovies={createdMovies} />
-          <CreateMovie createMovieFn={createMovieFn} />
         </div>
       </LanguageContext.Provider>
     </ThemeContext.Provider>

@@ -29,6 +29,7 @@ class CreateMovie extends React.Component {
     return (
       <form>
         <TextField
+          style={{margin: "20px"}}
           id="title"
           label="Title"
           value={this.state.title}
